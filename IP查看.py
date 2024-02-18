@@ -19,7 +19,7 @@ for i in nums:
     if len(cfs[i+1])<=100:
         numsp[i-1]+=("              可能未连接")
     else:
-        numsp[i-1]+=("              可能已连接")
+        numsp[i-1]+=("              已连接")
 while True:
     a=easygui.choicebox(cfs[1],"ip快捷查看器",numsp)
     if a=="Cancel"or a==None:
